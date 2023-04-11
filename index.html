@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="flex justify-center bg-slate-800 w-2/4 h-screen p-5">
+        <form name="comments" class="flex flex-col text-stone-800 w-3/4" action="">
+          <label class="text-stone-200" for="name">Фамилия и Имя</label>
+          <input class="mb-3 h-10 pl-2 outline-0" type="text" name="name" id="name" />
+          <label class="text-stone-200" for="date ">Выбирите дату (можно оставить текущюю)</label>
+          <input class="mb-3 h-10 pl-2 outline-0" type="date" name="date" id="date" />
+          <label class="text-stone-200" for="comment ">Комментарий:</label>
+          <textarea class="p-2 outline-0" id="comment" name="comment" rows="5" cols="23"></textarea>
+          <button class="bg-indigo-500 py-2 px-6 w-60 mt-6" type="submit">Отправить</button>
+        </form>
+      </div>
+      <ul id="comments" class="bg-gray-200 w-2/4 h-screen p-5 fixed right-0 overflow-auto"></ul>
+    </div>
+  </body>
+</html>
